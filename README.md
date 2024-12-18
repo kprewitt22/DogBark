@@ -5,9 +5,6 @@ Here’s the README based on your original paper with minimal changes, formatted
 # Classification of Dog Barks via Supervised Learning
 
 **Kyle Prewitt**  
-Bagley College of Engineering, Mississippi State University  
-CSE 4633/6633 Introduction to Artificial Intelligence  
-Dr. Eric Hansen  
 December 12, 2024  
 
 ## Overview
