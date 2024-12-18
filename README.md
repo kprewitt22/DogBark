@@ -19,7 +19,7 @@ Pre-compiled datasets of animal sounds and random noises were downloaded and lab
 The audio can be converted to a spectrogram to evaluate the sounds graphically, as seen in figure 1. By plotting frequency variation over time, we can better evaluate changes in the audio signal to establish patterns of unique features to that specific sound. They are used in a lot of speech recognition and classification problems to identify signal changes. Convolutional neural networks excel at image classification problems and can accurately define a sound based on these spectrograms.
 
 ### Figure 1: Spectrogram of a local dog barking
-
+![alt text](pics/10epochTrainedModel.png)
 ---
 
 ## Data Preprocessing
@@ -27,7 +27,7 @@ The audio can be converted to a spectrogram to evaluate the sounds graphically, 
 In preparation, I have written a preprocessing script to take audio data from a video or sound file and create a spectrogram that is labeled as either non-barking or barking. Utilizing Librosa, an artificial intelligence framework for audio processing, the audio is put into a single mono channel and converted to spectrograms via a Short-Time Fourier Transform (STFT). 
 
 ### Figure 2: The Pipeline for Audio Processing to Model via TensorFlow and Librosa
-
+![alt text](pics/dogBark.drawio.png)
 ---
 
 ## Model Architecture
@@ -41,7 +41,8 @@ The model contains a total of 9 layers that extract higher features from the spe
 During training, my model iterated for forty epochs at batch sizes of sixteen due to the high quality of the image set. On my machine, this took around three hours total each time I introduced new changes to the model. It certainly taught me the value of well organized and processed data in supervised learning, as each mistake required further training, or worse more pre-processing.
 
 ### Figure 3 & 4: Training vs Validation Accuracy and Loss
-
+![alt text](pics/40_epoch_run.png)
+![alt text](pics/40_epoch_run_val.png)
 The high validation accuracy may seem as though it overfits, and in some instances does, but has high validation accuracy due to utilizing dropout. Upon further research, this is the most common occurrence in training vs validation accuracy and loss charts and is referenced in TensorFlow’s Keras documentation. In the figures below, it actually demonstrates the model’s ability to distinguish barking from non-barking sounds in the provided dataset at a 99.88% accuracy.
 
 ### Figure 5: Analysis of Unknown Audio
