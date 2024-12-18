@@ -26,8 +26,7 @@ The audio can be converted to a spectrogram to evaluate the sounds graphically, 
 4. [Training the Model](#training-the-model)
 5. [Testing the Model](#testing-the-model)
 6. [How to Add Noise to Dataset](#how-to-add-noise-to-dataset)
-7. [Known Issues](#known-issues)
-8. [License](#license)
+7. [License](#license)
    
 ## Data Preprocessing
 
@@ -164,12 +163,6 @@ However, during testing on unseen or difficult to hear audio, it became apparent
 
 ---
 
-## Known Issues
-
-- If the model overfits, consider adding more noise or increasing dataset diversity.
-- Ensure balanced classes in the dataset for better training results.
-
----
 
 ## References
 
