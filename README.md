@@ -49,11 +49,8 @@ During training, my model iterated for forty epochs at batch sizes of sixteen du
 ### Figure 3 & 4: Training vs Validation Accuracy and Loss
 ![alt text](pics/40_epoch_run.png)
 ![alt text](pics/40_epoch_run_val.png)
+
 The high validation accuracy may seem as though it overfits, and in some instances does, but has high validation accuracy due to utilizing dropout. Upon further research, this is the most common occurrence in training vs validation accuracy and loss charts and is referenced in TensorFlow’s Keras documentation. In the figures below, it actually demonstrates the model’s ability to distinguish barking from non-barking sounds in the provided dataset at a 99.88% accuracy.
-
-### Figure 5: Analysis of Unknown Audio
-
-### Figure 6: Evaluation of Model Accuracy
 
 ---
 
